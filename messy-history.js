@@ -19,5 +19,19 @@ export const readCSV = () => {
     });
 };
 
-
+//Function to perform the math operations
+export const performOperations = () => {
+  results.forEach((result) => {
+    const { operation, num1, num2 } = result;
+    if (operation === "add") {
+      console.log(helpers.sum(num1, num2));
+    } else if (operation === "subtract") {
+      console.log(helpers.subtract(num1, num2));
+    } else if (operation === "multiply") {
+      console.log(helpers.multiply(num1, num2));
+    } else if (operation === "divide") {
+      console.log(helpers.divide(num1, num2));
+    }
+  });
+};
 
