@@ -1,5 +1,4 @@
 //reads in a csv file and uses the helpers to perform the math operations
-import { sum, subtract, multiply, divide } from "./helpers/helper.js";
 const fs = require("fs");
 const path = require("path");
 const helpers = require("./helpers/helper.js");
@@ -34,4 +33,3 @@ export const performOperations = () => {
     }
   });
 };
-
